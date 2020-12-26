@@ -1,7 +1,206 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <title>ルビーDogのプロフィール</title>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cabin:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+  <style>
+    body,
+    h1,
+    h2,
+    p {
+      margin: 0;
+    }
+
+    img {
+      display: block;
+      vertical-align: middle;
+    }
+
+    a {
+      text-decoration: none;
+      display: block;
+    }
+
+    .page_title {
+      text-align: center;
+      position: absolute;
+      top: 100px;
+      right: 0;
+      bottom: 0;
+      left: 0px;
+      font-family: 'Hiragino Sans', cursive;
+      color: white;
+    }
+
+    .main_img {
+      width: 200px;
+      height: 200px;
+      border-radius: 150px;
+      box-sizing: border-box;
+      border: 8px solid white;
+      position: absolute;
+      top: calc(250px - 100px + 50px);
+      left: calc(50% - 100px);
+    }
+
+    .top_section {
+      background-image: linear-gradient(45deg, #ff929e 0%, #ff9362 100%);
+      height: 500px;
+    }
+
+    body {
+      font-family: 'Cabin', sans-serif;
+      color: #5e6c77;
+    }
+
+    .my_name {
+      color: white;
+      font-size: 16px;
+      position: absolute;
+      top: calc(360px + 70px);
+      left: calc(50% - 33px);
+    }
+
+    .about_section {
+      text-align: center;
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+
+    .about_title {
+      color: #ffb6a5;
+      margin-bottom: 15px;
+    }
+
+    .about_detail {
+      width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+    }
+
+    table {
+      margin: 3px auto;  
+      width: 40%
+    }
+
+    td {
+      text-align: left;
+    }
+
+    .message_section {
+      margin-top: 100px;
+      margin-bottom: 100px;
+      text-align: center;
+    }
+
+    .message_title {
+      color: #ffb6a5;
+      margin-bottom: 15px;
+    }
+
+    .message_img {
+      width: 150px;
+      height: 150px;
+      border-radius: 200px;
+      box-sizing: border-box;
+      border: 5px solid white;
+      box-shadow: 0 5px 30px rgba(116, 117, 127, 0.3);
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .message_detail {
+      width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: left;
+    }
+
+    .footer_section {
+      background: #74757f;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-align: center;
+      color: white;
+    }
+
+    .button {
+      width: 200px;
+      background: white;
+      color: #ffb6a5;
+      text-align: center;
+      padding: 15px;
+      border-radius: 30px;
+
+      position: absolute;
+      top: calc(500px - 49px/2 + 50px);
+      left: calc(50% - 230px/2);
+
+      box-shadow: 0 5px 30px rgba(255, 147, 98, .5);
+    }
+
+    .main_section {
+      width: 980px;
+      background: white;
+      margin: 50px auto;
+      box-shadow: 0 5px 30px rgba(0, 0, 0, .2);
+    }
+  </style>
+
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+  <div class="main_section">
+
+    <div class="top_section">
+      <h1 class="page_title">Profile</h1>
+      <img class="main_img"
+        src="https://yt3.ggpht.com/a/AATXAJxaIeFzpMLjBLywW-z-X8vjBWA3wOFbR3O8simKEw=s176-c-k-c0x00ffffff-no-rj-mo">
+      <p class="my_name">Rubydog</p>
+      <a href="https://twitter.com/rubydog725" class="button">FOLLOW</a>
+    </div>
+
+    <div class="about_section">
+      <h2 class="about_title">URLs</h2>
+      <p class="about_detail">
+        <table>
+          <tr>
+            <td> twitter: </td>
+            <td> <a href="https://twitter.com/rubydog725" style="display:inline">https://twitter.com/rubydog725</a> </td>
+          </tr>
+          <tr>
+            <td> Youtube: </td>
+            <td> <a href="https://youtube.com/c/rbdog" style="display:inline">https://youtube.com/c/rbdog</a> </td>
+          </tr>
+          <tr>
+            <td> Qiita: </td>
+            <td> <a href="https://qiita.com/Rubydog" style="display:inline">https://qiita.com/Rubydog</a> </td>
+          </tr>
+        </table>
+      </p>
+    </div>
+
+    <div class="message_section">
+      <h2 class="message_title">MESSAGE</h2>
+      <p class="message_detail">
+        どうもこんにちはルビードッグです<br>
+        趣味でプログラミングしたり、仕事でプログラミングしたりしてます。興味がある技術はUnity, SwiftUI, AR, Blockchain, Deno, etc...です<br>
+        よろしくお願いします。
+      </p>
+    </div>
+
+    <footer class="footer_section">
+      <p>Producted by Rubydog</p>
+    </footer>
+
+  </div>
+
 </body>
+
 </html>
